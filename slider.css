@@ -36,7 +36,7 @@ body {
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
 }
-
+.slider:hover .slider-item .item .caption,
 .slider:hover .slider-item .item .caption h3,
 .slider:hover .left-slide,
 .slider:hover .right-slide {
@@ -126,20 +126,25 @@ body {
     display: none;
     position: relative;
 }
-
-.slider .slider-item .item .caption h3 {
-    position: absolute;
+.slider .slider-item .item .caption{
+	    position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
+	text-align: center;
+	background-color: rgba(253, 249, 255, 0.6);
+	    padding: 10px 0;
+    display: none;
+}
+.slider .slider-item .item .caption h3 {
+
     font-size: 24px;
     color: #302e4d;
     font-family: "Rubik", sans-serif;
     font-weight: 700;
-    text-align: center;
-    background-color: rgba(253, 249, 255, 0.6);
-    padding: 10px 0;
-    display: none;
+    
+    
+
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
